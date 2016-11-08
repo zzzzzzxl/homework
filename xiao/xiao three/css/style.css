@@ -142,9 +142,43 @@ body{
 	width: 1000px;
 	height: 303px;
 	background-image: url(../images/col8.jpg);
+	padding-top: 47px;
 }
-
-
-
+#footer-wrap{
+	width: 837px;
+	height: 210px;
+	/*background-color: red;*/
+	margin:0 auto;
+	padding-top: 10px;
+	text-align: center;
+	color: #f7e1ba;
+}
+#footer-wrap p{
+	white-space: pre;
+	margin: 15px auto;
+	font-size: 14px;
+}
+#footer-wrap ul{
+	list-style: none;
+	margin: 0 auto;
+    width: 576px;
+}
+#footer-wrap ul > li{
+	float: left;
+}
+#footer-wrap ul > li > a{
+	display: block;
+	margin: 0 20px;
+	text-decoration: none;
+	color: #f7e1ba;
+	font-size: 14px;
+	text-align: center;
+}
+#footer-wrap ul > li > a:hover{
+	color: #fff;
+}
+.clear{
+	clear: both;
+}
 
 
