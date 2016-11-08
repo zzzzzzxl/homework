@@ -1,0 +1,139 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color:#f7e1ba;
+}
+#wrap{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+#nav{
+	width: 315px;
+	height: 55px;
+	/*background-color: red;*/
+	position: absolute;
+	top: 28px;
+	left: 27px;
+	z-index: 10;
+}
+#nav > a{
+	width: 107px;
+	height: 55px;
+	float: left;
+}
+#nav > #nav-menu{
+	width: 183px;
+	height: 31px;
+	float: right;
+	margin-top: 24px;
+	background-image: url(../images/menur.jpg);
+	list-style: none;
+}
+#nav > #nav-menu > li{
+	float: left;
+}
+#nav > #nav-menu > li > a{
+	display: block;
+	width: 58px;
+	line-height: 16px;
+	margin-top: 8px;
+	color: #f7e1ba;
+	text-decoration: none;
+	text-align: center;
+}
+#nav > #nav-menu > li > a#news,
+#nav > #nav-menu > li > a#forum
+{
+	border-right: 2px solid #f7e1ba;
+}
+#banner{
+	width: 1000px;
+	height: 623px;
+	background-image: url(../images/banner.jpg);
+	position: absolute;
+	top: 74px;
+}
+#row-wrap{
+	width: 1000px;
+	position: absolute;
+	top: 697px;
+}
+#row1{
+	width: 1000px;
+	height: 427px;
+}
+.row > .col{
+	float: left;
+}
+#col1{
+	width: 569px;
+	height: 427px;
+	background-image: url(../images/col1.jpg);
+}
+#col1:hover{
+	background-image: url(../images/col11.jpg);
+}
+#col2{
+	width: 431px;
+	height: 427px;
+	background-image: url(../images/col2.jpg);
+}
+#col2:hover{
+	background-image: url(../images/col22.jpg);
+}
+#row2{
+	width: 1000px;
+	height: 477px;
+}
+#col3{
+	width: 405px;
+	height: 477px;
+	background-image: url(../images/col3.jpg);
+}
+#col3:hover{
+	background-image: url(../images/col33.jpg);
+}
+#col4{
+	width: 595px;
+	height: 477px;
+	background-image: url(../images/col4.jpg);
+}
+#col4:hover{
+	background-image: url(../images/col44.jpg);
+}
+#row3{
+	width: 1000px;
+	height: 341px;
+}
+#col5{
+	width: 543px;
+	height: 341px;
+}
+#col5 > #row5-1{
+	width: 543px;
+	height: 180px;
+	background-image: url(../images/col5.jpg);
+}
+#col5 > #row5-2{
+	width: 543px;
+	height: 161px;
+	background-image: url(../images/col6.jpg);
+}
+#col6{
+	width: 457px;
+	height: 341px;
+	background-image: url(../images/col7.jpg);
+}
+#footer{
+	width: 1000px;
+	height: 303px;
+	background-image: url(../images/col8.jpg);
+}
+
+
+
+
+
