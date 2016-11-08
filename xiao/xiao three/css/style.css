@@ -117,15 +117,26 @@ body{
 	height: 180px;
 	background-image: url(../images/col5.jpg);
 }
+#col5 > #row5-1:hover{
+	background-image: url(../images/col55.jpg);
+}
 #col5 > #row5-2{
 	width: 543px;
 	height: 161px;
 	background-image: url(../images/col6.jpg);
 }
+#col5 > #row5-2:hover{
+	background-image: url(../images/col66.jpg);
+}
 #col6{
 	width: 457px;
 	height: 341px;
 	background-image: url(../images/col7.jpg);
+}
+#col6:hover{
+	width: 457px;
+	height: 341px;
+	background-image: url(../images/col77.jpg);
 }
 #footer{
 	width: 1000px;
