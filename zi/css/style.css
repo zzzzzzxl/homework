@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.clear{
+	clear: both;
+}
+#kong{
+	width: 500px;
+	height: 500px;
+	background-color: red;
+	float: left;
+	position: relative;
+}
+#gu{
+	width: 500px;
+	height: 500px;
+	background-color: skyblue;
+	float: left;
+}
+.left-dian{
+	width: 40px;
+	height: 12px;
+	transform: rotate(40deg);
+	position: absolute;
+	border-radius: 10px 5px 15px 1px;
+}
+.right-dian{
+	width: 35px;
+    height: 12px;
+    position: absolute;
+    transform: rotate(93deg);
+    border-radius: 10px 5px 32px 1px;
+}
+.heng{
+	width: 141px;
+    height: 12px;
+    position: absolute;
+    border-radius: 10px 20px 1px 1px;
+}
+.shu-dian{
+	width: 35px;
+    height: 12px;
+    position: absolute;
+    transform: rotate(92deg);
+    border-radius: 0 35px 0px 1px;
+}
+#kong > .left-dian{
+	background-color: black;
+	left: 200px;
+	top: 100px;
+}
+#kong > .right-dian{
+	background-color: black;
+	left: 134px;
+    top: 134px;
+}
+#kong > .heng{
+	background-color: black;
+	left: 156px;
+    top: 123px;
+}
+#kong > .shu-dian{
+	left: 272px;
+    top: 137px;
+	background-color: black;
+}
