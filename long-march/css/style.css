@@ -102,22 +102,38 @@ input, select {
 
 body { 
   font-size: 62.5%;
-  font-family: MicrosoftYaHei;
+  font-family: Microsoft YaHei;
   background-image: url(../images/bg.jpg);
+  overflow-x: hidden;
 }
+
+/*头部部分*/
+
+#page-header {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/banner.jpg);
+  background-size: 100% 100%;
+}
+
+#page-header h1 {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
 /*导航*/
 
 #page-content { position: relative; }
-#page-header {
+#navbar {
   position: absolute;
   right: 50px;
-  top: 0;
+  top: 120px;
   -webkit-transition: .8s; 
      -moz-transition: .8s; 
       -ms-transition: .8s; 
        -o-transition: .8s; 
           transition: .8s;
-  
+  z-index: 1000;
 }
 
 .navbar-nav {
@@ -167,6 +183,7 @@ body {
   text-align: center;
   color: #fff;
   font-size: 1.4em;
+  cursor: pointer;
 }
 .navbar-nav li:hover {
   background-color: #fd7202;
@@ -246,8 +263,8 @@ body {
   margin: 25px 0 45px 0;
 }
 .knet-right-main {
-  width: 313px;
-  background-color: #e3d1bc;
+  max-width: 313px;
+  background-color: rgba(237,212,189,0.5);
   padding: 35px 30px;
   font-size: 1.8em;
   text-indent: 2em;
@@ -275,15 +292,20 @@ body {
   height: 436px;
   background-image: url(../images/lookbackbg.png);
   position: relative;
+  background-size: 100% 100%;
 }
 
 .lookback-body {
     position: absolute;
-    left: 360px;
+    left: 36%;
     top: 100px;
 }
-
-.lookback-body a{
+.lookback-body li {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.lookback-body a {
   text-decoration: none;
   color: #fdeeed;
   line-height: 25px;
@@ -309,12 +331,19 @@ body {
   height: 428px;
   background-image: url(../images/sayingbg.png);
   position: relative;
+  background-size: 100% 100%;
 }
 
 .saying-body {
     position: absolute;
-    left: 320px;
+    left: 30%;
     top: 120px;
+}
+
+.saying-body li {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .saying-body a{
@@ -334,12 +363,19 @@ body {
   height: 494px;
   background-image: url(../images/futurebg.png);
   position: relative;
+  background-size: 100% 100%;
 }
 
 .future-body {
     position: absolute;
-    left: 200px;
+    left: 18%;
     top: 140px;
+}
+
+.future-body li {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .future-body a{
@@ -379,10 +415,13 @@ body {
   width: 320px;
   line-height: 25px;
   font-size: 1.8em;
-  padding: 40px 0;
+  padding: 40px 30px;
+
 }
 
-.topic-item p { text-indent: 2em; }
+.topic-item p { 
+  text-indent: 2em;
+}
 
 /*诗话长征部分*/
 
@@ -396,7 +435,7 @@ body {
 }
 
 .footer {
-  width: 800px;
+  max-width: 810px;
   margin: 0 auto;
   display: -webkit-box;
   display: -moz-box;
@@ -415,7 +454,7 @@ body {
           align-items: center;
 }
 
-.copyright{ width: 600px; }
+.copyright{ width: 610px; }
 .copyright p{
    font-size:1.2em;
    line-height:30px;
@@ -479,3 +518,96 @@ body {
   -webkit-animation-name: pulse;
   animation-name: pulse;
 }
+@media screen and (max-width: 1000px) {
+  #navbar { display: none; }
+}
+@media screen and (max-width: 800px) {
+  #knet > img {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+  }
+  .wrapper{
+    max-width: 600px;
+    padding-top: 10%;
+  }
+  .knet-wrapper{
+    flex-direction: column;
+  }
+   .lookback-main {
+    height: 350px;
+    background-size: 100% 100%;
+  }
+  .lookback-body {
+    left: 36%;
+    width: 50%;
+    top: 20%;
+  }
+  .saying-main{
+    height: 350px;
+    background-size: 100% 100%;
+  }
+  .saying-body {
+    left: 30%;
+    width: 50%;
+    top: 20%;
+  }
+  .future-main{
+    height: 350px;
+    background-size: 100% 100%;
+  }
+  .future-body {
+    left: 20%;
+    width: 50%;
+    top: 20%;
+  }
+  #topic > img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+  }
+  #poem > img {
+    display: block;
+    margin: 0 auto;
+    height: 54px;
+  }
+  .copyright {
+    display: none;
+  }
+  .footer {
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .wrapper{
+    max-width: 400px;
+  }
+  .knet-wrapper{
+    flex-direction: column;
+  }
+  .knet-right-main {
+    font-size: 1.2em;
+  }
+  .info-button {
+    width: 70px;
+    line-height: 30px;
+    font-size: 1.4em;
+  }
+  .lookback-main {
+    height: 250px;
+  }
+  .saying-main {
+    height: 250px;
+  }
+  .future-main {
+    height: 260px;
+  }
+  
+  .topic-item {
+    font-size: 1.2em;
+  }
+}
+
+
