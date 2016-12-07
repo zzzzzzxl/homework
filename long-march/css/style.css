@@ -522,11 +522,6 @@ body {
   #navbar { display: none; }
 }
 @media screen and (max-width: 800px) {
-  #knet > img {
-    width: 150px;
-    margin: 0 auto;
-    display: block;
-  }
   .wrapper{
     max-width: 600px;
     padding-top: 10%;
@@ -561,15 +556,26 @@ body {
     width: 50%;
     top: 20%;
   }
+  #knet > img {
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+  }
+  .knet-content h2 {
+    margin-bottom: 5%;
+  }
+  .book > img{
+    height: 300px;
+  }
   #topic > img {
     display: block;
     margin: 0 auto;
-    width: 120px;
+    height: 30px;
   }
   #poem > img {
     display: block;
     margin: 0 auto;
-    height: 54px;
+    height: 30px;
   }
   .copyright {
     display: none;
@@ -604,9 +610,20 @@ body {
   .future-main {
     height: 260px;
   }
-  
+  .topic-main {
+    background-image: none;
+    background-color: #e3ddca;
+  }
   .topic-item {
     font-size: 1.2em;
+    padding: 10px 0;
+  }
+  .topic-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .topic-item p {
+    padding: 0 10px;
   }
 }
 
